@@ -1,0 +1,401 @@
+/* === Global Font and Body Background === */
+body {
+  font-family: 'Libertinus Sans', 'Prompt', 'Times New Roman', Arial, sans-serif;
+  background-color: #f9f9ff;
+  font-size: 1.12rem;
+  line-height: 1.7;
+}
+
+/* === Headings === */
+h1 { font-size: 2.3rem; }
+h2 { font-size: 2rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.3rem; }
+h5 { font-size: 1.12rem; }
+h6 { font-size: 1rem; }
+
+/* === Paragraphs === */
+p {
+  font-size: 1.07rem;
+  color: #444;
+  line-height: 1.8;
+}
+
+/* === Lead === */
+.lead {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+/* === Carousel === */
+.carousel-caption {
+  background: rgba(0,0,0,0.55);
+  border-radius: 0.5rem;
+  padding: 1.5rem 1rem;
+  color: #fff;
+  text-shadow: 0 2px 8px #000;
+}
+.carousel-caption p,
+.carousel-caption .lead {
+  color: #fff !important;
+  font-weight: 500;
+  text-shadow: 0 1px 8px #000;
+  font-size: 1.22rem;
+}
+.carousel img, .carousel-item img {
+  max-height: 450px;
+  object-fit: cover;
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* === Section Box === */
+.section-box {
+  background-color: #e4dede;
+  border-radius: 10px;
+  padding: 30px;
+  border-top: 5px solid #ffc107;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+.section-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+/* === Newsletter === */
+.newsletter input {
+  border-radius: 20px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+  font-size: 1.07rem;
+}
+.newsletter button {
+  border-radius: 20px;
+  transition: background-color 0.3s ease;
+  font-size: 1.07rem;
+}
+.newsletter button:hover {
+  background-color: #ffbe0b;
+  color: #000;
+}
+
+/* === Stylish Divider === */
+.stylish-divider {
+  border: none;
+  height: 3px;
+  background: linear-gradient(to right, transparent, #fff, transparent);
+  width: 100%;
+  max-width: 300px;
+  margin: 2rem auto;
+  opacity: 0.5;
+}
+
+/* === Logo Hover Effect === */
+header img:hover {
+  transform: scale(1.05);
+  transition: transform 0.2s ease;
+}
+
+/* === Footer === */
+footer {
+  font-size: 1.05rem;
+}
+
+/* === Event Titles === */
+.event-title {
+  background-color: #ff7eb9;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1.15rem;
+  text-align: center;
+}
+
+/* === Event Images === */
+.event-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+.event-img:hover {
+  transform: scale(1.03);
+}
+.section-padding {
+  padding-bottom: 2rem;
+}
+
+/* === Form Styles === */
+.form-control, .form-label {
+  font-family: 'Libertinus Sans', 'Prompt', Arial, sans-serif;
+  font-size: 1.07rem;
+}
+
+/* === About Us Team Image === */
+.img-fluid.rounded {
+  max-width: 170px;
+  margin: 0 auto;
+  box-shadow: 0 3px 16px rgba(0,0,0,0.07);
+}
+
+/* === Product Cards === */
+.card {
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: 'Libertinus Sans', sans-serif;
+  border-radius: 10px;
+  overflow: hidden;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+.card h5 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: 10px 0 5px;
+  color: #222;
+}
+.price {
+  color: #444;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+.card p {
+  font-size: 0.9rem;
+  color: #555;
+  flex-grow: 1;
+}
+
+/* === Product Card Buttons ONLY (shop) === */
+.shop-section .card button,
+.product-card button {
+  border: none;
+  outline: 0;
+  padding: 10px;
+  background-color: #000;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 0.95rem;
+  transition: background 0.3s;
+}
+.shop-section .card button:hover,
+.product-card button:hover {
+  background-color: #444;
+}
+
+/* === Section-Based Card Colours === */
+.new-arrivals .card { background-color: #fff8e7; }
+.popular-series .card { background-color: #f0f8ff; }
+.accessories .card { background-color: #f5fff0; }
+.figures .card { background-color: #fdf0ff; }
+
+/* === Shop Section Headings === */
+.shop-section-title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-align: center;
+  color: #222;
+  margin-bottom: 1.5rem;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 8px;
+}
+.shop-section-title::after {
+  content: "";
+  display: block;
+  width: 60%;
+  height: 3px;
+  background: linear-gradient(to right, #ff7eb9, #ff65a3, #7afcff);
+  margin: 8px auto 0 auto;
+  border-radius: 2px;
+}
+
+/* === Speech Bubble === */
+.speech-bubble {
+  position: absolute;
+  left: -200px;
+  top: 30px;
+  width: 250px;
+  background: #d8d9da;
+  border-radius: 15px;
+  padding: 15px;
+  font-size: 0.9rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+.speech-bubble::after {
+  content: "";
+  position: absolute;
+  top: 20px;
+  right: -20px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent transparent transparent #d8d9da;
+}
+
+/* === Social Icons === */
+.social-icons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  margin: 0 5px;
+  border-radius: 50%;
+  background-color: #f1f1f1;
+  color: #000;
+  font-size: 18px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+.social-icons a:hover {
+  background-color: #000;
+  color: #fff;
+  transform: translateY(-3px);
+}
+
+/* Back to Top Button */
+#backToTopBtn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  display: none;
+  z-index: 999;
+  font-size: 20px;
+  width: 45px;
+  height: 45px;
+  text-align: center;
+  line-height: 40px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  transition: opacity 0.3s ease;
+}
+#backToTopBtn.show {
+  display: block;
+}
+
+/*===Register and Login Page Social Buttons ===*/
+.btn-facebook {
+  background-color: #1877F2;
+  color: #fff;
+  border: none;
+}
+.btn-facebook:focus,
+.btn-facebook:active {
+  background-color: #166fe5;
+  box-shadow: inset 0 3px 5px rgba(0,0,0,.125);
+}
+
+/* === Canvas Drawing === */
+.canvas-container {
+  position: relative;
+  width: 800px;
+  height: 500px;
+  margin: 20px auto;
+  border: 2px solid #333;
+}
+#backgroundCanvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+#drawingCanvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-color: transparent;
+  cursor: crosshair;
+}
+
+/* Toolbar */
+.tools {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+  margin: 1.5rem auto;
+  padding: 1rem 1.5rem;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+.tools label {
+  font-weight: 600;
+  margin-right: 0.4rem;
+  color: #444;
+}
+input[type="range"] {
+  width: 120px;
+  accent-color: #007bff;
+}
+
+/* General Buttons */
+button {
+  padding: 0.45rem 1.2rem;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+}
+
+/* Disabled buttons */
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Canvas container */
+#container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem auto;
+  border: 4px solid #333;
+  border-radius: 12px;
+  background: #fafafa;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+  width: 800px;
+  height: 500px;
+  position: relative;
+}
+
+/* Captcha Box */
+#captchaBox {
+  background: #fdfdfd;
+  border: 1px solid #ddd;
+}
+
+#captchaCanvas {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background: #fff8e1; /* light yellow like screenshot */
+  font-weight: bold;
+}
+
+/* Success & Error message */
+#captchaMsg.text-success {
+  color: #198754 !important; /* Bootstrap green */
+  font-weight: 500;
+}
+#captchaMsg.text-danger {
+  color: #dc3545 !important; /* Bootstrap red */
+  font-weight: 500;
+}

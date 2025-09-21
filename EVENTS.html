@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Home – OtaZora</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap CSS (CDN link) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons for extra icons in navbar/sections -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <!-- Google Font for stylish site text -->
+  <link href="https://fonts.googleapis.com/css2?family=Libertinus+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Site Favicon -->
+  <link rel="icon" type="image/png" href="logo1.png">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="stylenew.css">
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+<!--Header Section-->
+  <header class="d-flex justify-content-between align-items-center p-3 bg-dark shadow-sm">
+  <!-- Site Logo-->
+  <div class="d-flex align-items-center">
+    <a href="HOMEPAGE.html" class="d-flex align-items-center text-decoration-none">
+      <img src="logo1.png" alt="OtaZora Logo" style="height: 55px; width: auto; filter: brightness(2);">
+    </a>
+  </div>
+  <!-- Search Bar -->
+  <div class="position-relative ms-auto">
+  <input type="search" id="searchBox" class="form-control" placeholder="Search for anime...">
+  <div id="searchResults" class="dropdown-menu w-100"></div>
+</div>
+
+</header>
+
+<!-- Navigation bar -->
+<nav class="navbar navbar-expand-md navbar-dark bg-dark border-top border-light sticky-top z-2">
+  <div class="container-fluid">
+    <!-- Hamburger/collapse button (mobile menu) -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu"
+      aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <!-- Put the nav links inside the collapsible div! -->
+    <div class="collapse navbar-collapse" id="navbarMenu">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item"><a href="index.html" class="nav-link ">Home</a></li>
+        <li class="nav-item"><a href="about-us.html" class="nav-link">About Us</a></li>
+        <li class="nav-item"><a href="SHOP.html" class="nav-link">Shop</a></li>
+        <li class="nav-item"><a href="EVENTS.html" class="nav-link active">Events</a></li>
+        <li class="nav-item"><a href="ContactUS.html" class="nav-link ">Contact Us</a></li>
+        <li class="nav-item"><a href="Register.html" class="nav-link">Register/Login</a></li>
+        <li class="nav-item"><a href="otaku.html" class="nav-link">Otaku Sketch Pad</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  <!-- Main -->
+  <main class="container my-5 flex-grow-1">
+    <h2 class="text-center fw-bold mb-5">Events</h2>
+
+    <div class="row">
+      <!-- Anime Expo -->
+      <div class="col-md-3 section-padding">
+        <h5 class="event-title">Anime Expo</h5>
+        <p class="text-center">Explore major exhibitions and panels from your favourite creators and studios.</p>
+        <img src="animeexpo1.jpg" class="event-img mb-3" alt="Anime Expo 1">
+        <img src="animeexpo2.jpg" class="event-img mb-3" alt="Anime Expo 2">
+        <img src="animeexpo3.jpg" class="event-img mb-3" alt="Anime Expo 3">
+      </div>
+
+      <!-- Local Meetup & Cosplay -->
+      <div class="col-md-6 section-padding">
+        <h5 class="event-title">Local Meetup</h5>
+        <p class="text-center">Casual get-togethers with anime fans, games, and snacks!</p>
+        <div class="row text-center mb-4">
+          <div class="col-md-4 mb-3"><img src="meetup1.jpg" class="event-img" alt="Meetup 1"></div>
+          <div class="col-md-4 mb-3"><img src="meetup2.jpg" class="event-img" alt="Meetup 2"></div>
+          <div class="col-md-4 mb-3"><img src="meetup3.jpg" class="event-img" alt="Meetup 3"></div>
+        </div>
+
+        <h5 class="event-title">Cosplay Show</h5>
+        <p class="text-center">Witness stunning costumes and character performances!</p>
+        <div class="row text-center">
+          <div class="col-md-4 mb-3"><img src="cosplay1.jpg" class="event-img" alt="Cosplay 1"></div>
+          <div class="col-md-4 mb-3"><img src="cosplay2.jpg" class="event-img" alt="Cosplay 2"></div>
+          <div class="col-md-4 mb-3"><img src="cosplay3.jpg" class="event-img" alt="Cosplay 3"></div>
+        </div>
+      </div>
+
+      <!-- Workshops -->
+      <div class="col-md-3 section-padding">
+        <h5 class="event-title">Workshops</h5>
+        <p class="text-center">Learn drawing, voice acting, and more from experts in the anime industry.</p>
+        <img src="workshop1.jpg" class="event-img mb-3" alt="Workshop 1">
+        <img src="workshop2.jpg" class="event-img mb-3" alt="Workshop 2">
+        <img src="workshop3.jpg" class="event-img mb-3" alt="Workshop 3">
+      </div>
+    </div>
+  </main>
+
+  <!-- Featured Events -->
+  <div class="container my-5">
+    <h5 class="event-title">Upcoming Featured Events</h5>
+    <p class="text-center mb-4">Plan your next otaku adventure with these must-see gatherings!</p>
+    <div class="table-responsive">
+      <table class="table table-bordered table-hover text-center align-middle">
+        <thead class="table-dark">
+          <tr>
+            <th>Date</th>
+            <th>Event Name</th>
+            <th>Location</th>
+            <th>Type</th>
+            <th>Cost</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="table-primary">
+            <td>Aug 18, 2025</td>
+            <td>Anime Expo QLD</td>
+            <td>Brisbane Convention Centre</td>
+            <td>Convention</td>
+            <td>$25</td>
+          </tr>
+          <tr class="table-warning">
+            <td>Sep 3, 2025</td>
+            <td>Otaku Meetup</td>
+            <td>Melbourne CBD</td>
+            <td>Meetup</td>
+            <td>Free</td>
+          </tr>
+          <tr class="table-danger">
+            <td>Oct 10, 2025</td>
+            <td>Cosplay Clash</td>
+            <td>Sydney Arena</td>
+            <td>Cosplay</td>
+            <td>$15</td>
+          </tr>
+          <tr class="table-success">
+            <td>Nov 22, 2025</td>
+            <td>Manga Art Workshop</td>
+            <td>Gold Coast Library</td>
+            <td>Workshop</td>
+            <td>$10</td>
+          </tr>
+          <tr class="table-info">
+            <td>Dec 1, 2025</td>
+            <td>Anime Trivia Night</td>
+            <td>Online (Zoom)</td>
+            <td>Virtual</td>
+            <td>Free</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3 mt-auto">
+    © OtaZora 2025. All Rights Reserved.
+    Last updated: August 2025.
+    Contact us at <a href="mailto:contactus@OtaZora" class="text-white">contactus@OtaZora</a>
+  </footer>
+
+  <!--Back to Top Button-->
+<button id="backToTopBtn" class="btn btn-dark rounded-circle">
+  <i class="bi bi-arrow-up-short"></i>
+</button>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="scriptsfordtask.js"></script>
+</body>
+</html>
